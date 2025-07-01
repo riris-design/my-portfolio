@@ -1,0 +1,316 @@
+﻿@charset "UTF-8";
+
+/* mediaクエリはじめ */
+@media screen and (min-width:381px) and ( max-width:779px) {
+/* ハンバーガーメニュー */
+.menu-btn {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	justify-content: center;
+	align-items: center;
+	z-index: 90;
+	background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 25px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	position: absolute;
+}
+.menu-btn span:before {
+	bottom: 8px;
+}
+.menu-btn span:after {
+	top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+	background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+	bottom: 0;
+	transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+	display: none;
+}
+
+.menu-content {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 100%;/*leftの値を変更してメニューを画面外へ*/
+	z-index: 80;
+	background-color: #3584bb;
+	transition: all 0.5s;/*アニメーション設定*/
+}
+.menu-content ul {
+	padding: 70px 10px 0;
+}
+.menu-content ul li {
+	border-bottom: solid 1px #ffffff;
+	list-style: none;
+}
+.menu-content ul li a {
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	box-sizing: border-box;
+	color:#ffffff;
+	text-decoration: none;
+	padding: 9px 15px 10px 0;
+	position: relative;
+}
+.menu-content ul li a::before {
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-top: solid 2px #ffffff;
+	border-right: solid 2px #ffffff;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 11px;
+	top: 16px;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+	left: 0;/*メニューを画面内へ*/
+}
+
+/* ハンバーガーメニュー終わり */
+
+#wrap{
+margin: 0 auto;
+width:100%;
+}
+
+atticle,aside,details,figcaption,figure,header,hgroup,menu,nav,section{
+display:block;
+}
+
+body {
+font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+color:#630;
+line-height:25px;
+font-size:0.95em;
+}
+
+#header{
+	width: 100%;
+}
+
+#header img{
+	width: 100%;
+	margin-left: -20px;
+}
+header li{
+float:left;
+list-style-type:none;
+}
+
+#mainimg{
+width: 100%;
+height:100%;
+float:left;
+margin: 10px 0 15px 0;
+}
+
+#mainimg img{
+width:100%;
+height:100%;
+}
+
+#contents{
+width:100%;
+float:left;
+}
+
+#newsbox{
+width:96%;
+height:auto;
+border:solid 1px #CCC;
+padding:10px;
+margin-bottom:15px;
+background-color:#FFF;
+}
+
+#newsbox p{
+border-bottom:dashed 1px #CCC;
+}
+
+.midashi{
+border-bottom:dashed 2px #C30;
+font-weight:bold;
+color:#17355A;
+font-size:1.2em;
+}
+
+.contentsbox{
+width:96%;
+height:auto;
+border:solid 1px #CCC;
+padding:10px;
+margin-bottom:15px;
+background-color:#FFF;
+}
+
+.imgbox{
+width:230px;
+height:167px;
+float:right;
+margin:10px 0 10px 25px;
+}
+
+.clear{
+clear:both;
+}
+
+
+h2{
+	width: 96%;
+font-size:0.9em;
+margin:0 0 20px 0;
+float: left;
+}
+
+#sidenavi{
+width:100%;
+margin-left:15px;
+float:left;
+}
+
+#goannai{
+font-size:1.2em;
+border-bottom:solid 2px #C30;
+margin:0 0 15px 0;
+color:#C30;
+}
+
+.sidebox{
+width:100%;
+height:130px;
+margin-bottom:15px;
+
+}
+
+footer{
+clear:both;
+height:50px;
+text-align:center;
+font-size:0.85em;
+background-image:url(images/footer.gif);
+background-repeat:no-repeat;
+padding-top:30px;
+display:block;
+}
+
+img{
+border: 0px;
+}
+
+a{
+text-decoration: none;
+}
+
+a:link{
+color: #630;
+}
+
+a:visited{
+color: #630;
+}
+
+a:hover{
+color: #630;
+text-decoration: underline;
+}
+
+a:active{
+color: #630;
+}
+
+.minibox{
+width: 100%;
+height: 135px;
+margin: 0 10px 10px 0;
+float: left;
+}
+
+.tablestyle{
+text-align: left;
+width: 450px;
+}
+
+.tablestyle td{
+border-bottom:dashed 1px #CCC;
+}
+
+.tablestyle th{
+background-color: #630;
+color: #FFF;
+text-align: center;
+}
+
+/* トップに戻る初め */
+#page_top{
+width: 90px;
+height: 60px;
+position: fixed;
+right: 0;
+bottom: 0;
+opacity: 0.6;
+border: 3px solid #17355A
+border-radius: 15px;
+}
+#page_top a{
+position: relative;
+display: block;
+width: 90px;
+height: 60px;
+text-decoration: none;
+}
+#page_top a::before{
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+content: '\f062';
+font-size: 25px;
+color: #17355A;
+position: absolute;
+width: 25px;
+height: 25px;
+top: -25px;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+text-align: center;
+}
+#page_top a::after{
+content: 'PAGE TOP';
+font-size: 13px;
+color: #17355A;
+position: absolute;
+top: 38px;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+text-align: center;
+}/* トップに戻る終わり */
+
+}/* mediaクエリ終わり */

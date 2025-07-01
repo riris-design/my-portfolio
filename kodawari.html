@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html kang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keyword" content="cafe">
+	<meta name="discription" content="説明文">
+	<title>こだわり｜ririscafe</title>
+
+	<!--【スマホの初期画面設定】-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+	<link href="../css/mobile.css"rel="stylesheet"media="(max-width:500px)">
+	<link href="../css/tablet.css"rel="stylesheet"media="(max-width:779px) and (min-width:501px)">
+	<link href="../css/desktop.css"rel="stylesheet"media="(min-width:780px)">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css"><!-- トップに戻る-->
+	<link rel="stylesheet" href="../css/drawerMenu.css"><!-- ハンバーガーメニュー -->
+	<!--DrawerMenu用-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--ドロワー用-->
+<script>
+	$(function() {
+		$('#navToggle').click(function(){
+			$('header').toggleClass('openNav');
+		});
+	});
+	</script>
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<header>
+		<div id="header">
+			<h1>熊本の人気カフェ「riris cafe」おすすめのランチを楽しむ</h1>
+			<a href="../index.html"><img src="../images/logo2.jpg"alt="ririscafeのロゴ"></a>
+			</div>
+	
+				<div id="navToggle">
+					<div>
+						<span></span> <span></span> <span></span>
+					</div>
+				</div><!--#navToggle-->
+		
+				<nav>
+					<ul id="menu">
+						<li><a href="../index.html"><img src="../images/home.png"alt="ホーム"></a></li>
+						<li><a href="menu.html"><img src="../images/menu.png"alt="メニュー"></a></li>
+						<li><a href="kodawari.html"><img src="../images/quality.png"alt="おいしさと安全"></a></li>
+						<li><a href="tenpoannai.html"><img src="../images/shop.png"alt="店舗案内"></a></li>
+					</ul>
+				</nav>
+		</header>
+
+	<article>
+		<h2>県内の農家さんから直接仕入れた新鮮な素材を使い、1つ1つ丁寧に手作りしています。</h2>
+
+	<!-- メインコンテンツ -->
+	<div id="contents">
+    <section>
+    <div class="contentsbox">
+      <h3 class="midashi">無農薬！おいしい有機野菜だけを使用しています。</h3>
+      <div class="imgbox"><img src="../images/yasai01.jpg"alt="有機野菜だけを使用">
+      </div>
+      <p>すべて無農薬！<br>自然のまま育てられた新鮮な野菜・果物だけを仕入れています。</p>
+      <p>もちろん安心の熊本産。<br>熊本各地から様々な食材を取り寄せています。</p>
+      <p>例えばキャベツは阿蘇、トマトは八代、玉ねぎはあしきた、レタスは天草。</p>
+      <p class="clear">だから安心・安全でおいしい料理をご提供いたします。</p>
+    </div>
+    </section>
+
+    <section>
+      <div class="contentsbox">
+        <h3 class="midashi">契約農家から直接お店へ</h3>
+        <div class="imgbox"><img src="../images/yasai02.jpg"alt="契約農家から直接お店へ">
+        </div>
+        <p>使用する野菜や果物は、契約農家から直接当店へ運ばれてきます。<br>その日の朝に収穫した、新鮮な野菜や果物ばかりです。</p>
+        <p>これをすぐに専用の冷蔵庫に入れ保存します。</p>
+        <p>その後、オーダーを受けてから取り出し調理します。</p>
+        <p class="clear">だからいつも新鮮フレッシュ！とれたて無農薬の美味しさを味わってください。</p>
+      </div>
+      </section>
+  
+    <section>
+    <div class="contentsbox">
+      <h3 class="midashi">オーダーを受けてから、手作りしています。</h3>
+      <div class="imgbox"><img src="../images/anshin.jpg"alt="全て手作りしています">
+      </div>
+      <p>一番おいしい状態で召し上がっていただけるように、作り置きではなく、全てオーダーを受けてからお作りしています。<br>だからいつも出来立て新鮮！</p>
+      <p>ピザはアツアツとろ〜り。ジュースは搾りたて！</p>
+      <p class="clear">素材の良さを活かし、一番の食べごろでお出しします。</p>
+    </div>
+    </section>
+
+	</div>
+	</article>
+
+	<!-- サイトナビ -->
+	<section>
+	<div id="sidenavi">
+	<h2 id="goannai">ご案内</h2>
+	<div class="sidebox"><a href="menu.html"><img src="../images/menusyoukai.jpg" alt="メニューのご紹介"></a></div>
+	<div class="sidebox"><a href="menu.html"><img src="../images/new.jpg" alt="新メニュー追加のお知らせ"></a></div>
+	<div class="sidebox"><a href="kodawari.html"><img src="../images/kodawari.jpg" alt="さきちんカフェのこだわり"></a></div>
+	<div class="sidebox"><a href="tenpoannai.html"><img src="../images/tenpoannai.jpg" alt="店舗案内"></a></div>
+
+	<!--aside-->
+	<aside>
+	<h2>ご予約やお持ち帰りもOK！</h2>
+	<p>できたてホカホカ！お電話でのご注文も承っています。ご予約やテイクアウトにどうぞ！詳しくは各店舗までお電話ください。</p>
+	</aside>
+		</div>
+		</section>
+
+	<!--フッター-->
+	<footer>
+	<p>COPYRIGHT &#169;2021 riris cafe</p>
+	</footer>
+
+
+</div><!-- wrap終わり -->
+<div id="page_top"><a href="#"></a></div><!-- トップに戻る-->
+
+</body>
+</html>
